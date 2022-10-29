@@ -61,7 +61,7 @@ h5 {
 
 /*region CONTAINERS */
 .block {
-    padding: 2rem 0;
+    padding: 2rem 0 4rem;
 }
 
 .block--main {
@@ -72,6 +72,8 @@ h5 {
     display: grid;
     grid-template: repeat(3, auto) / 1fr;
     text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 /*region BLOCK IMAGES */
@@ -121,24 +123,52 @@ h5 {
 }
 
 .block__images__grid__item {
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
-.block__images__grid__item--bottom {
+.block__images__grid__item--left {
     position: absolute;
     left: 0;
     bottom: -20px;
     z-index: -1;
 }
 
-.block__images__grid__item--top {
+.block__images__grid__item--right {
     position: absolute;
     right: 0;
+}
+
+.block__images__grid__item--bubble-up {
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+
+.block__images__grid__item--bubble-down {
+    position: absolute;
+    right: 0;
+    top: 260px;
+}
+
+.block__images__grid--meetings {
+    min-height: 490px;
+}
+
+.block__images__grid__item--left.block__images__grid--meetings__main {
+    top: 0;
 }
 
 @media screen and (min-width: 500px) {
     .block__images__grid {
         min-width: 480px;
+    }
+
+    .block__images__grid__item--bubble-up {
+        right: 100px;
+    }
+
+    .block__images__grid__item--bubble-down {
+        right: 100px;
     }
 }
 
@@ -150,7 +180,8 @@ h5 {
     }
 
     .block__heading {
-        margin-bottom: 21rem;
+        font-size: 3.052rem;;
+        margin-bottom: 25rem;
     }
 
     .block__images {
@@ -201,7 +232,7 @@ h5 {
 
 .nav__logo {
     height: 20px;
-    /*width: 77px;*/
+    opacity: 0.5;
 }
 
 .nav__logo__image {
@@ -228,7 +259,7 @@ h5 {
 }
 
 .nav__menu__item {
-    padding: 5px 0;
+    padding: 8px 0;
     text-transform: uppercase;
 }
 
@@ -333,13 +364,23 @@ h5 {
 }
 
 .btn--primary {
-    border: 1px solid #FD5867;
+    border: 1px solid var(--primary-color);
     color: #fff;
-    background-color: #FD5867;
+    background-color: var(--primary-color);
 }
 
 .btn--primary:hover {
     background-color: #ee4050;
+}
+
+.btn--secondary {
+    border: 1px solid var(--secondary-color);
+    color: #fff;
+    background-color: var(--secondary-color);
+}
+
+.btn--secondary:hover {
+    background-color: #6f7ee1;
 }
 
 /*endregion*/
