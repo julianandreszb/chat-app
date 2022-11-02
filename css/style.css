@@ -505,6 +505,30 @@ h5 {
 
 /*endregion*/
 
+/*region ICONS */
+.icon {
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0.5rem;
+}
+
+.icon-instagram {
+    background: url(/images/instagram-icon.svg) no-repeat;
+}
+
+.icon-facebook {
+    background: url(/images/facebook-icon.svg) no-repeat;
+}
+
+.icon-twitter {
+    background: url(/images/twitter-icon.svg) no-repeat;
+    top: 0.8rem;
+}
+/*endregion*/
+
 /*region CLASS HELPERS */
 .absolute {
     position: absolute;
@@ -521,6 +545,6 @@ h5 {
 .uppercase {
     text-transform: uppercase;
 }
-
 /*endregion*/
+
 
