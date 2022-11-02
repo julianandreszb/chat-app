@@ -154,6 +154,13 @@ h5 {
     min-height: 490px;
 }
 
+.block__images__grid--features {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    min-height: 350px;
+}
+
 .block__images__grid__item--left.block__images__grid--meetings__main {
     top: 0;
 }
@@ -194,6 +201,7 @@ h5 {
         grid-column: 1;
         place-self: center left;
     }
+
 }
 
 /*endregion*/
@@ -215,6 +223,67 @@ h5 {
     opacity: 0.5;
     margin: 0 auto 1.5rem auto;
     max-width: 50ch;
+}
+
+/*endregion*/
+
+/*region BLOCK FEATURES */
+.feature-list {
+    display: flex;
+    justify-content: center;
+    scale: 0.7;
+}
+
+.feature-list__item {
+    border: 0;
+    border-radius: 20px;
+    width: 24rem;
+    height: 24rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #fff
+}
+
+.feature-list__item--push-right {
+    left: 100px;
+}
+
+.feature-list__item--push-top {
+    top: -150px;
+    z-index: 10;
+}
+
+.feature-list__item--push-left {
+    left: -100px;
+}
+
+.feature-list__item__icon-container {
+    border-radius: 20px;
+    padding: 1rem;
+    width: 16rem;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-list__item__icon-container--plugins {
+    background-color: #8EEAFF;
+}
+
+.feature-list__item__icon-container--secure {
+    background-color: #80FF8C;
+}
+
+.feature-list__item__icon-container--customizable {
+    background-color: var(--primary-color);
+}
+
+.feature-list__item__icon-container__icon {
+
 }
 
 /*endregion*/
@@ -398,6 +467,44 @@ h5 {
 
 /*endregion*/
 
+/*region FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: auto;
+    column-gap: 2rem;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-left: 0rem;
+}
+
+.footer__list .footer__list__item:first-child {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.footer__list__item__link {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer__list__item__link:hover {
+    font-weight: 500;
+}
+
+.footer__list__item__link__logo {
+    width: 10rem;
+}
+
+/*endregion*/
+
 /*region CLASS HELPERS */
 .absolute {
     position: absolute;
@@ -407,4 +514,13 @@ h5 {
     position: relative;
 }
 
+.text-highlighted-primary {
+    color: var(--primary-color);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
 /*endregion*/
+
