@@ -425,13 +425,6 @@ h5 {
     border-radius: 0;
 }
 
-.btn--ghost:hover {
-    /*border: 1px solid #fff;*/
-    /*color: #fff;*/
-    /*background-color: #000;*/
-    font-weight: 500;
-}
-
 .btn--primary {
     border: 1px solid var(--primary-color);
     color: #fff;
